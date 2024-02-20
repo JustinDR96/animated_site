@@ -85,4 +85,73 @@ h1 {
   right: 20%;
   top: 10%;
   width: 300px;
+  z-index: -2;
+}
+
+//responsive tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-first {
+    top: 40%;
+    left: 5%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .container-btns {
+    top: 30px;
+  }
+  .btn-first {
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+  }
+  .lignes {
+    top: 3%;
+    left: 5%;
+    .l1 {
+      width: 200px;
+    }
+    .l2 {
+      width: 100px;
+    }
+  }
+  .logo {
+    width: 200px;
+    right: 30%;
+    top: 20%;
+  }
+}
+
+//responsive mobile
+@media screen and (max-width: 767px) {
+  .container-first {
+    top: 30%;
+    left: 5%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .container-btns {
+    top: 20px;
+  }
+  .btn-first {
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+  }
+  .lignes {
+    top: 1%;
+    left: 5%;
+    .l1 {
+      width: 150px;
+    }
+    .l2 {
+      width: 80px;
+    }
+  }
+  .logo {
+    width: 150px;
+    right: 15%;
+    top: 20%;
+  }
 }
