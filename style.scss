@@ -14,6 +14,11 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   font-family: "Orbitron", sans-serif;
+  overflow: auto;
+}
+
+.first {
+  height: 100vh;
 }
 
 .container-first {
@@ -84,9 +89,10 @@ h1 {
   position: absolute;
   right: 20%;
   top: 10%;
-  width: 300px;
+  width: 250px;
   z-index: -2;
   filter: drop-shadow(0 0 10px #333);
+  filter: opacity(95%);
 }
 
 //responsive tablet
@@ -154,5 +160,34 @@ h1 {
     width: 150px;
     right: 15%;
     top: 20%;
+  }
+}
+
+.second {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  .container-second {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      left: 5%;
+    }
+  }
+  .container-right {
+    height: 600px;
+    width: 500px;
+    border: red 1px solid;
+    position: absolute;
+    top: 10%;
+    right: 10%;
   }
 }
